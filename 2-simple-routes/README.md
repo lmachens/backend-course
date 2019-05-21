@@ -15,3 +15,5 @@ Open a second terminal and run tests with:
 ```
 npm test
 ```
+
+Please fix all issues :).
