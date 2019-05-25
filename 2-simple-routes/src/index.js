@@ -6,10 +6,10 @@ http
       res.writeHead(200);
       res.end('Hello World!');
     } else if (req.url === '/about') {
-      res.writeHead(401);
+      res.writeHead(200);
       res.end('About');
     } else {
-      res.writeHead(200);
+      res.writeHead(404);
       res.end('Unknown route');
     }
   })

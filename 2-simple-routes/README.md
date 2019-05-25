@@ -16,4 +16,11 @@ Open a second terminal and run tests with:
 npm test
 ```
 
-Please fix all issues :).
+You should get this message:
+
+```
+Tests:       2 failed, 2 passed, 4 total
+```
+
+That means, two of four tests are failing.
+Please fix the response of the `/about` route and add a `/private` route with `403 Forbidden`.
