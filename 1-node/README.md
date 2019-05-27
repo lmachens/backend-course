@@ -25,7 +25,7 @@ Run `node index.js` to print the menu card on the command line. This example dem
 
 ## Tasks
 
-Your task is to create a new file `stock.js` which console log `Empty Stock`.
+Your task is to create a new file `stock.js` which console log `Empty Stock`. You can test it with `node stock.js` or `npm test 1-node` (from top level).
 
 ## Resources
 
