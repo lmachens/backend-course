@@ -6,6 +6,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "jest": "^24.8.0",
     "prettier": "^1.17.1"
   }
