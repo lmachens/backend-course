@@ -24,8 +24,8 @@ Usually, the kitchen and stockroom are not visible to the customer. We can compa
 
 In this course, we will build a virtual restaurant in multiple steps.
 
-## Tasks
+## Lessions
 
 You will find a README.md in every subfolder with instructions and more informations. Please start with `1-node`.
-Every task contains tests to verify your learning. These tests are executed from the same folder of this README.md with `npm test`.
-You can run specific tasks with `npm test 1-node` or even shorter with `npm test 1`.
+Every lession contains tests to verify your learning. These tests are executed from the same folder of this README.md with `npm test`.
+You can test specific lessions with `npm test 1-node` or even shorter with `npm test 1`.

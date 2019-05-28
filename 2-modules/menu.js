@@ -1,7 +1,20 @@
-const menu = [
+const menuItems = [
   {
-    price: 10,
-    name: 'Pommes'
+    name: 'Burger',
+    price: 8.5
+  },
+  {
+    name: 'Beer',
+    price: 3.5
+  },
+  {
+    name: 'Fries',
+    price: 2.8
   }
 ];
-exports.default = menu;
+
+const getMenu = () => {
+  return menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}`);
+};
+
+exports.getMenu = getMenu;

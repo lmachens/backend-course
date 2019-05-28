@@ -1,3 +1,9 @@
-const menu = require('./menu.js');
+const menu = require('./menu');
 
-console.log(menu);
+console.log('Neue Fische Restaurant');
+console.log('----------------------');
+
+console.log('Menu:');
+console.log(JSON.stringify(menu.getMenu()));
+
+console.log('Stock:');
