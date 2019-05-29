@@ -1,0 +1,19 @@
+{
+  "name": "9-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Leon Machens",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
