@@ -97,7 +97,7 @@ Now we want to add the correct HTTP header status code and content type in `app.
 
 ```js
 const server = http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
 
   // write a response to the client
   res.write('Neue Fische Restaurant\n');
