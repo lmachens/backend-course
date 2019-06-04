@@ -1,6 +1,7 @@
 # Backend Course
 
 ![](backend-vs-frontend.jpg)
+
 Source: https://www.pinterest.com/pin/722335227708979491/
 
 ## What will you learn?

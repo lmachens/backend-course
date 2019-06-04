@@ -14,15 +14,82 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ## Requirements
 
-Install latest Node.js LTS version from https://nodejs.org/en/.
+Install latest Node.js LTS version from https://nodejs.org.
 
 ## Lession
 
-Run `node app.js` to print the menu card on the command line. This example demonstrate the usage of JavaScript features. In VSCode Debuggin Node.js code is very easy. You can add a breakpoint by clicking on the line number and run the code with `F5` or in the debug menu.
+Create a file named `app.js`, and add the following code:
 
-## Tasks
+```js
+const menuItems = [
+  {
+    name: 'Burger',
+    price: 8.5
+  },
+  {
+    name: 'Beer',
+    price: 3.5
+  },
+  {
+    name: 'Fries',
+    price: 2.8
+  }
+];
 
-Your task is to create a new folder `models` with a file `menu.js` with the content `console.log('Menu')`. You can test it with `node stock.js` or `npm test 1-node` (from top level).
+function printMenu() {
+  menuItems.forEach(menuItem => {
+    console.log(`${menuItem.name}: $${menuItem.price}`);
+  });
+}
+
+console.log('Neue Fische Restaurant');
+console.log('----------------------');
+
+printMenu();
+```
+
+Write `node app.js` in your command line interface (cli) and hit enter:
+
+```
+cd 1-node
+node app.js
+```
+
+The cli returns this:
+
+```
+Neue Fische Restaurant
+----------------------
+Burger: $8.5
+Beer: $3.5
+Fries: $2.8
+```
+
+## Tests
+
+Verify that your code follows the instructions by running `npm test 1-node` from top level folder. It will test if `app.js` is executable and logs `Neue Fische Restaurant`.
+
+```
+npm test 1-node
+```
+
+On success, you will see this result:
+
+```
+> jest "1-node"
+
+ PASS  1-node/__tests__/app.js
+  app.js
+    √ console log "Neue Fische Restaurant" (22ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.157s, estimated 2s
+Ran all test suites matching /1-node/i.
+```
+
+Another way to test your code is to use the VSCode debugger. Add a breakpoint inside `app.js` by clicking on the line number. Debug the code in the VSCode debug menu or with the shortcut `F5`.
 
 ## Resources
 

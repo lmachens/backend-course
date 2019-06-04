@@ -13,6 +13,8 @@ const menuItems = [
   }
 ];
 
-exports.getMenu = () => {
-  return menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}`);
+exports.printMenu = function() {
+  menuItems.forEach(menuItem => {
+    console.log(`${menuItem.name}: $${menuItem.price}`);
+  });
 };

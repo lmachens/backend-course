@@ -21,4 +21,5 @@ function printMenu() {
 
 console.log('Neue Fische Restaurant');
 console.log('----------------------');
+
 printMenu();
