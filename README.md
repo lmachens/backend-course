@@ -7,8 +7,12 @@ Source: https://www.pinterest.com/pin/722335227708979491/
 
 - Backend definition
 - Server-side JavaScript with Node.js
+- npm package manager
 - Web-Applications with Express
 - Database with MongoDB
+- RESTful API
+- VSCode debugging
+- Jest tests
 
 ## Backend Definition
 
@@ -28,4 +32,4 @@ In this course, we will build a virtual restaurant in multiple steps.
 
 You will find a README.md in every subfolder with instructions and more informations. Please start with `1-node`.
 Every lession contains tests to verify your learning. These tests are executed from the same folder of this README.md with `npm test`.
-You can test specific lessions with `npm test 1-node` or even shorter with `npm test 1`.
+You can test specific lessions with `npm test 1-node`.

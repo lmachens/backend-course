@@ -13,11 +13,11 @@ const menuItems = [
   }
 ];
 
-const printMenu = () => {
+function printMenu() {
   menuItems.forEach(menuItem => {
     console.log(`${menuItem.name}: $${menuItem.price}`);
   });
-};
+}
 
 console.log('Neue Fische Restaurant');
 console.log('----------------------');
