@@ -13,6 +13,6 @@ const menuItems = [
   }
 ];
 
-exports.getMenu = () => {
-  return menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}`);
+exports.getMenu = function() {
+  return menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}\n`);
 };
