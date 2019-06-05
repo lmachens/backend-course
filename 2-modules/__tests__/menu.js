@@ -4,7 +4,7 @@ describe('models/menu.js', () => {
     const storeLog = inputs => (outputData += inputs);
 
     console['log'] = jest.fn(storeLog);
-    const menu = require('../models/menu.js');
+    const menu = require(__dirname + '/../models/menu.js');
     menu.printMenu();
     expect(outputData).toEqual(expect.stringContaining('Burger'));
   });

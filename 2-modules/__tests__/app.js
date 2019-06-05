@@ -4,7 +4,7 @@ describe('app.js', () => {
     const storeLog = inputs => (outputData += inputs);
 
     console['log'] = jest.fn(storeLog);
-    require('../app.js');
+    require(__dirname + '/../app.js');
     expect(outputData).toEqual(expect.stringContaining('Neue Fische Restaurant'));
   });
 });
