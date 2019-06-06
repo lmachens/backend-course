@@ -6,10 +6,10 @@ POSTMAN introduction
 
 Focus on GET and POST. Say something about PUT and PATCH.
 
-## Changes from previous lession
+## Lession
 
-## Example
-
-## Tasks
+## Tests
 
 ## Resources
+
+https://www.w3schools.com/tags/ref_httpmethods.asp

@@ -1,0 +1,11 @@
+{
+  "name": "7-rest",
+  "version": "1.0.0",
+  "description": "Representational State Transfer (REST)\r RESTful API\r POSTMAN introduction",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
