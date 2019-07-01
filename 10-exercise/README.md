@@ -1,8 +1,6 @@
-## Wiederholungsaufgabe (week6 exercise)
+## exercise
 
-### Backend (with node and express) and Frontend (with Classes)
-
-1. Create a new project `cards-app-express` (setup like yesterday's exercise)
+1. Create a new project `cards-app-express`
 
 2. Build the API:
 
@@ -25,12 +23,6 @@
 #### Hints:
 
 - In your frontend you don't need multiple pages, just always show the CardList and Form
-- Use Arrow-Functions or `.bind(this)` where necessary
 - Open the DevTools-Console to see possible Errors
-
-6. **Bonus exercise**
-   - Add a symbol to `edit` a card
-   - Implement the edit-Logic in Frontend and Backend (with `PATCH /cards/:id`
-     and a request body that contains the changes)
 
 **Enjoy**
