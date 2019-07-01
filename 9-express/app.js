@@ -2,7 +2,6 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const menu = require('./routes/menu');
-const upload = require('./routes/upload');
 const connect = require('./utils/mongo').connect;
 
 const port = 8080; // the server listens on port 8080
@@ -11,9 +10,6 @@ const server = http.createServer(function(req, res) {
 
   if (query.pathname === '/menu') {
     return menu.handleRequest(req, res);
-  }
-  if (query.pathname === '/upload') {
-    return upload.handleRequest(req, res);
   }
 
   fs.readFile('./views/app.html', function(err, data) {

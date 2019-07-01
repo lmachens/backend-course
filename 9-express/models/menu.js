@@ -7,3 +7,8 @@ exports.getMenu = function() {
     .toArray()
     .then(menuItems => menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}\n`));
 };
+
+exports.addMenuItem = function(menuItem) {
+  const menuCollection = collection('menu');
+  return menuCollection.insertOne(menuItem);
+};

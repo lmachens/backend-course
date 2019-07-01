@@ -127,7 +127,6 @@ const http = require('http');
 const url = require('url');
 const fs = require('fs');
 const menu = require('./routes/menu');
-const upload = require('./routes/upload');
 const connect = require('./utils/mongo').connect;
 
 const port = 8080; // the server listens on port 8080
@@ -136,9 +135,6 @@ const server = http.createServer(function(req, res) {
 
   if (query.pathname === '/menu') {
     return menu.handleRequest(req, res);
-  }
-  if (query.pathname === '/upload') {
-    return upload.handleRequest(req, res);
   }
 
   fs.readFile('./views/app.html', function(err, data) {
@@ -211,8 +207,64 @@ db.getCollection('menu').insert([
 
 Refresh http://localhost:8080/menu now.
 
-- Import database and use collection in routes
-- Add `.env`-vars with https://github.com/motdotla/dotenv
+We will connect the form to the database now. Add `addMenuItem` to `models/menu.js`:
+
+```js
+const collection = require('../utils/mongo').collection;
+
+exports.getMenu = function() {
+  const menuCollection = collection('menu');
+  return menuCollection
+    .find()
+    .toArray()
+    .then(menuItems => menuItems.map(menuItem => `${menuItem.name}: $${menuItem.price}\n`));
+};
+
+exports.addMenuItem = function(menuItem) {
+  const menuCollection = collection('menu');
+  return menuCollection.insertOne(menuItem);
+};
+```
+
+Call `addMenuItem` in `routes/menu.js`:
+
+```js
+const fs = require('fs');
+const formidable = require('formidable');
+const menu = require('../models/menu');
+
+exports.handleRequest = function(req, res) {
+  if (req.method.toUpperCase() === 'POST') {
+    // parse a file upload
+    const form = new formidable.IncomingForm();
+
+    form.parse(req, function(err, fields, files) {
+      res.writeHead(200, { 'content-type': 'text/html' });
+      const { name, price } = fields;
+      menu
+        .addMenuItem({
+          name,
+          price
+        })
+        .then(() => {
+          res.end(`<a href="/menu">Added ${name}. Click to reload</a>`);
+        });
+    });
+    return;
+  }
+
+  fs.readFile('./views/menu.html', 'utf8', function(err, data) {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    menu.getMenu().then(menuItems => {
+      const html = data.replace('{{ menu }}', menuItems.join('<br />'));
+      res.write(html);
+      res.end();
+    });
+  });
+};
+```
+
+To allow configurable mongodb uris, use process.env or `.env`-vars with https://github.com/motdotla/dotenv.
 
 ## Tests
 

@@ -51,7 +51,7 @@ And add a form to `views/menu.html`:
       {{ menu }}
     </div>
     <h2>New item</h2>
-    <form action="/upload" enctype="multipart/form-data" method="post">
+    <form action="/menu" enctype="multipart/form-data" method="post">
       Name:<br />
       <input type="text" name="name" />
       <br />

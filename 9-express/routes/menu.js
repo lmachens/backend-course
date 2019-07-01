@@ -8,8 +8,16 @@ exports.handleRequest = function(req, res) {
     const form = new formidable.IncomingForm();
 
     form.parse(req, function(err, fields, files) {
-      res.writeHead(200, { 'content-type': 'application/json' });
-      res.end(JSON.stringify({ fields, files }));
+      res.writeHead(200, { 'content-type': 'text/html' });
+      const { name, price } = fields;
+      menu
+        .addMenuItem({
+          name,
+          price
+        })
+        .then(() => {
+          res.end(`<a href="/menu">Added ${name}. Click to reload</a>`);
+        });
     });
     return;
   }
