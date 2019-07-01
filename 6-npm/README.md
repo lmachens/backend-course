@@ -15,10 +15,17 @@ This command prompts you for a number of things, such as the name and version of
 We now install a dependency we need in the next lession:
 
 ```
-npm install express
+npm install formidable
 ```
+
+npm installs `formidable` in node_modules folder and adds the dependency to the package.json. In addition, a file package-lock.json is created to specify the exact installed versions of the dependencies.
+
+## Tests
+
+`npm test 6-npm`
 
 ## Resources
 
 https://www.npmjs.com/
+https://www.npmjs.com/package/formidable
 https://www.w3schools.com/nodejs/nodejs_npm.asp
