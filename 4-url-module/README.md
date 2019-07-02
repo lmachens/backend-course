@@ -12,7 +12,6 @@ Add `url` import to `app.js` and parse the requested url `req.url`. We will log 
 ```js
 const http = require('http');
 const url = require('url');
-const menu = require('./routes/menu');
 
 const port = 8080; // the server listens on port 8080
 const server = http.createServer(function(req, res) {
