@@ -12,7 +12,7 @@ PUT, HEAD, DELETE, PATCH and OPTIONS are used in more advanced scenarios.
 
 We already installed `formidable` module in the previous lession, which helps us parsing form data and file uploads.
 
-Update `models/menu.js`:
+Update `routes/menu.js`:
 
 ```js
 const fs = require('fs');
