@@ -112,7 +112,7 @@ exports.connect = () => {
 };
 
 exports.collection = name => {
-  if (client.isConnected) {
+  if (client && client.isConnected) {
     // client connected, quick return
     return client.db(dbName).collection(name);
   }
@@ -174,7 +174,10 @@ const menu = require('../models/menu');
 
 exports.handleRequest = function(req, res) {
   fs.readFile('./views/menu.html', 'utf8', function(err, data) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.writeHead(200, {
+      'Accept-Encoding': 'UTF-8',
+      'Content-Type': 'text/html; charset=utf-8'
+    });
     menu.getMenu().then(menuItems => {
       const html = data.replace('{{ menu }}', menuItems.join('<br />'));
       res.write(html);
