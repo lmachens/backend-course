@@ -12,7 +12,7 @@ We want to use `fs` to serve html files from our http server. First we create a 
 ```html
 <html>
   <body>
-    <h1>Neue Fische Restaurant</h1>
+    <h1>neuefische Restaurant</h1>
     <a href="/menu">Menu</a>
   </body>
 </html>

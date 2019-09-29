@@ -15,7 +15,7 @@ const http = require('http');
 const port = 8080; // the server listens on port 8080
 const server = http.createServer(function(req, res) {
   // write a response to the client
-  res.write('Neue Fische Restaurant\n');
+  res.write('neuefische Restaurant\n');
   res.write('----------------------\n');
 
   // end the response
@@ -30,7 +30,7 @@ server.listen(port, function() {
 Run `node app.js` to start the server on http://localhost:8080. Open this url and receive this output:
 
 ```
-Neue Fische Restaurant
+neuefische Restaurant
 ----------------------
 ```
 
@@ -68,7 +68,7 @@ const menu = require('./models/menu');
 const port = 8080; // the server listens on port 8080
 const server = http.createServer(function(req, res) {
   // write a response to the client
-  res.write('Neue Fische Restaurant\n');
+  res.write('neuefische Restaurant\n');
   res.write('----------------------\n');
 
   // get menu (array of strings) and write every item
@@ -86,7 +86,7 @@ server.listen(port, function() {
 Stop your server and start it again to apply the code changes. Now open http://localhost:8080 again:
 
 ```
-Neue Fische Restaurant
+neuefische Restaurant
 ----------------------
 Burger: $8.5
 Beer: $3.5
@@ -100,7 +100,7 @@ const server = http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
 
   // write a response to the client
-  res.write('Neue Fische Restaurant\n');
+  res.write('neuefische Restaurant\n');
   res.write('----------------------\n');
 
   // get menu (array of strings) and write every item

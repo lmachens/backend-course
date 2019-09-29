@@ -3,7 +3,7 @@ const axios = require('axios');
 describe('app.js', () => {
   it('server listens on http://localhost:8080', () => {
     return axios.get('http://localhost:8080').then(result => {
-      expect(result.data).toEqual(expect.stringContaining('Neue Fische Restaurant'));
+      expect(result.data).toEqual(expect.stringContaining('neuefische Restaurant'));
     });
   });
 

@@ -79,7 +79,7 @@ const server = http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/html' });
 
   // write a response to the client
-  res.write('<h1>Neue Fische Restaurant</h1>');
+  res.write('<h1>neuefische Restaurant</h1>');
   res.write('<hr>');
   res.write('<a href="/menu">Menu</a>\n');
 

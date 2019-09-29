@@ -44,7 +44,7 @@ We can include `printMenu` in `app.js` now:
 ```js
 const menu = require('./models/menu');
 
-console.log('Neue Fische Restaurant');
+console.log('neuefische Restaurant');
 console.log('----------------------');
 
 menu.printMenu();
@@ -53,7 +53,7 @@ menu.printMenu();
 Running `node app.js` should print the same like before, but we were able to structure our code into multiple files.
 
 ```
-Neue Fische Restaurant
+neuefische Restaurant
 ----------------------
 Burger: $8.5
 Beer: $3.5

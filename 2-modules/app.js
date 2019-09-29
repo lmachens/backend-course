@@ -19,7 +19,7 @@ function printMenu() {
   });
 }
 
-console.log('Neue Fische Restaurant');
+console.log('neuefische Restaurant');
 console.log('----------------------');
 
 printMenu();

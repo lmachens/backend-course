@@ -6,7 +6,7 @@ const server = http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
 
   // write a response to the client
-  res.write('Neue Fische Restaurant\n');
+  res.write('neuefische Restaurant\n');
   res.write('----------------------\n');
 
   // get menu (array of strings) and write every item

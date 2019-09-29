@@ -14,11 +14,11 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ## Requirements
 
-Install latest Node.js LTS version from https://nodejs.org.
+Install latest Node.js LTS version from https://nodejs.org. You can verify the installed version with the command `node --version` in your terminal.
 
 ## Lesson
 
-Create a file named `app.js`, and add the following code:
+Create a file named `app.js` in the same folder of this README.md and add the following code:
 
 ```js
 const menuItems = [
@@ -42,23 +42,23 @@ function printMenu() {
   });
 }
 
-console.log('Neue Fische Restaurant');
+console.log('neuefische Restaurant');
 console.log('----------------------');
 
 printMenu();
 ```
 
-Write `node app.js` in your command line interface (cli) and hit enter:
+Change to this folder in your terminal and run the command `node app.js`:
 
 ```
 cd 1-node
 node app.js
 ```
 
-The cli returns this:
+The terminal returns this:
 
 ```
-Neue Fische Restaurant
+neuefische Restaurant
 ----------------------
 Burger: $8.5
 Beer: $3.5
@@ -67,7 +67,7 @@ Fries: $2.8
 
 ## Tests
 
-Verify that your code follows the instructions by running `npm test 1-node` from top level folder. It will test if `app.js` is executable and logs `Neue Fische Restaurant`.
+Verify that your code follows the instructions by running `npm test 1-node` from top level folder. It will test if `app.js` is executable and logs `neuefische Restaurant`.
 
 ```
 npm test 1-node
@@ -80,7 +80,7 @@ On success, you will see this result:
 
  PASS  1-node/__tests__/app.js
   app.js
-    √ console log "Neue Fische Restaurant" (22ms)
+    √ console log "neuefische Restaurant" (22ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
