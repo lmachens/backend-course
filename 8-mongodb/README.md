@@ -34,7 +34,7 @@ An index is helpful to find data faster: `city` -> `{ Cologne: ['1', '3'] }`.
 
 There are many database systems with different data storage and syntax like MySQL.
 
-## Lession
+## Lesson
 
 Follow these instructions to install mongodb on your machine: https://docs.mongodb.com/manual/administration/install-community/
 

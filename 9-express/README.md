@@ -2,7 +2,7 @@
 
 Express is a web framework for node. See https://www.npmjs.com/package/express#features for features.
 
-## Lession
+## Lesson
 
 Install module `npm install express`.
 

@@ -16,7 +16,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 Install latest Node.js LTS version from https://nodejs.org.
 
-## Lession
+## Lesson
 
 Create a file named `app.js`, and add the following code:
 

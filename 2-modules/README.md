@@ -7,7 +7,7 @@ In addition, Node.js has a set of built-in modules which you can use without any
 Use the `exports` keyword to make properties and methods available outside the module file.
 To include a module, use the `require()` function with the name of the module.
 
-## Lession
+## Lesson
 
 Create a new file `models/menu.js` that returns the `printMenu` function.
 

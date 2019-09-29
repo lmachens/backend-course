@@ -3,7 +3,7 @@
 To include the File System module, use the require() method `const fs = require('fs');`.  
 You can read, create, update, delete and rename files.
 
-## Lession
+## Lesson
 
 We want to use `fs` to serve html files from our http server. First we create a new folder called `views` with two files:
 

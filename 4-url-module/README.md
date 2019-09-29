@@ -5,7 +5,7 @@ You can import the module with `const url = require('url');`
 
 We will use `url.parse()` method, which will return an URL object.
 
-## Lession
+## Lesson
 
 Add `url` import to `app.js` and parse the requested url `req.url`. We will log the result to the console:
 

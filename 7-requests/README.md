@@ -8,9 +8,9 @@ Another common method is POST, which is used to send data to a server to create 
 
 PUT, HEAD, DELETE, PATCH and OPTIONS are used in more advanced scenarios.
 
-## Lession
+## Lesson
 
-We already installed `formidable` module in the previous lession, which helps us parsing form data and file uploads.
+We already installed `formidable` module in the previous lesson, which helps us parsing form data and file uploads.
 
 Update `routes/menu.js`:
 

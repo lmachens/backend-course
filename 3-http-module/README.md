@@ -5,7 +5,7 @@ We use this module usually to run a webserver.
 
 You can import the module with `const http = require('http');`
 
-## Lession
+## Lesson
 
 Replace the existing code of `app.js` with this:
 
